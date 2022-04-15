@@ -1,0 +1,31 @@
+.section--benefits {
+  padding-bottom: 0;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+  &__icon {
+    background: var(--secondary-color);
+    border-radius: 4px;
+    padding: 25px 100px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    margin-top: 30px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+
+    margin-top: 10px;
+    width: 270px;
+  }
+}
