@@ -3,8 +3,12 @@
 }
 
 .people-list {
-  display: flex;
   margin-top: 50px;
+  @include tablet {
+  }
+  @include desktop {
+    display: flex;
+  }
   &__item {
     width: 270px;
     background-color: #ffffff;

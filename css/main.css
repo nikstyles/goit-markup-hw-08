@@ -98,8 +98,15 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .pre__title {
@@ -254,14 +261,50 @@ body {
 }
 
 .benefits-list {
-  display: flex;
-  justify-content: space-between;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+}
+
+.benefits-list__item {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list__item {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-list__item {
+    max-width: 270px;
+    margin-bottom: 0;
+  }
 }
 
 .benefits-list__icon {
   background: var(--secondary-color);
   border-radius: 4px;
-  padding: 25px 100px;
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .benefits-list__title {
@@ -272,6 +315,13 @@ body {
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-top: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list__title {
+    text-align: start;
+  }
 }
 
 .benefits-list__text {
@@ -280,10 +330,21 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-top: 10px;
-  width: 270px;
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-list__text {
+    width: 270px;
+  }
 }
 
 /* Чем мы занимаемся */
+@media screen and (max-width: 1199px) {
+  .occupation {
+    display: none;
+  }
+}
+
 .occupation-list {
   display: flex;
   margin-top: 50px;
@@ -323,8 +384,13 @@ body {
 }
 
 .people-list {
-  display: flex;
   margin-top: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .people-list {
+    display: flex;
+  }
 }
 
 .people-list__item {

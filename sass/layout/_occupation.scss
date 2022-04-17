@@ -1,5 +1,11 @@
 /* Чем мы занимаемся */
 
+.occupation {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .occupation-list {
   display: flex;
   margin-top: 50px;
