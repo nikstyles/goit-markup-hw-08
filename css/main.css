@@ -565,6 +565,25 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .flex-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    width: max-content;
+  }
+}
+
 .address {
   color: var(--primary-white-color);
   font-family: Roboto;
@@ -572,6 +591,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  text-align: center;
   margin-top: 20px;
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -579,6 +599,12 @@ body {
 
 .address:hover, .address:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    text-align: left;
+  }
 }
 
 .mail,
@@ -589,6 +615,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  text-align: center;
   margin-top: 9px;
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -600,11 +627,39 @@ body {
   color: var(--accent-color);
 }
 
-.flex-footer {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .mail,
+  .tel {
+    text-align: left;
+  }
 }
 
-.footer-social__title,
+.footer-social__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+  margin-top: 60px;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social__title {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social__title {
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
 .subscription-email__title {
   font-weight: 700;
   font-size: 14px;
@@ -613,15 +668,34 @@ body {
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
+  display: block;
+  text-align: center;
 }
 
-.footer-social {
-  margin-left: 65px;
-  padding-top: 12px;
+@media screen and (min-width: 1200px) {
+  .subscription-email__title {
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-left: 65px;
+    padding-top: 12px;
+    width: max-content;
+  }
 }
 
 .subscription-social {
   display: flex;
+  justify-content: center;
 }
 
 .subscription-social__item:not(:last-child) {
@@ -642,18 +716,48 @@ body {
 }
 
 .subscription-email {
-  margin-left: auto;
   padding-top: 12px;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscription-email {
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-email {
+    margin-top: 0;
+    margin: 0;
+    margin-left: auto;
+  }
 }
 
 .subscription-email__input {
-  width: 358px;
+  width: 100%;
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
   color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscription-email__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-email__input {
+    display: block;
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 .subscription-email__icon {
@@ -673,10 +777,23 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   padding: 8px 28px;
-  margin-left: 15px;
   fill: var(--primary-white-color);
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-email__btn {
+    display: inline-flex;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-email form {
+    display: flex;
+  }
 }
 
 .backdrop {
@@ -894,15 +1011,28 @@ body {
   line-height: 1.38;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-right: 93px;
 }
 
 .logo__part {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
+}
+
 .footer__logo {
   color: var(--primary-white-color);
+  text-align: center;
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: left;
+  }
 }
 
 .portfolio-list {
