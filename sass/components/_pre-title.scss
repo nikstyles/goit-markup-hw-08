@@ -1,6 +1,12 @@
 .pre__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
   text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  @include tablet {
+  }
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }

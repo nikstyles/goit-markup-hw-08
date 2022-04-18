@@ -1,5 +1,9 @@
 /* Чем мы занимаемся */
-
+.section--occupation {
+  @media screen and (max-width: 1199px) {
+    padding: 0;
+  }
+}
 .occupation {
   @media screen and (max-width: 1199px) {
     display: none;

@@ -3,18 +3,31 @@
 }
 
 .people-list {
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: -30px;
+
   @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
   }
   @include desktop {
-    display: flex;
+    margin-top: 50px;
   }
   &__item {
-    width: 270px;
+    width: 100%;
+    margin-bottom: 30px;
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    @include tablet {
+      width: calc(100% / 2 - 30px);
+      margin-left: 30px;
+    }
+    @include desktop {
+      width: calc(100% / 4 - 30px);
+    }
   }
 }
 
@@ -34,10 +47,6 @@
     margin-top: 10px;
     text-align: center;
   }
-}
-
-.people-list .people-list__item + .people-list__item {
-  margin-left: 30px;
 }
 
 .social-list {
