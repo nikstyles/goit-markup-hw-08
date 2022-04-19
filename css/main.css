@@ -810,6 +810,7 @@ body {
   z-index: 2;
   transition: opacity 500ms cubic-bezier(0, 0.48, 0.29, 0.94), visibility 600ms cubic-bezier(0, 0.48, 0.29, 0.94), scale 300ms cubic-bezier(0, 0.48, 0.29, 0.94);
   /* transform: opacity 0%; */
+  overflow-y: auto;
 }
 
 .modal {
@@ -817,10 +818,16 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 530px;
+  width: 450px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 530px;
+  }
 }
 
 .modal__container {
@@ -830,9 +837,17 @@ body {
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+    text-align: left;
+  }
 }
 
 .is-hidden {
@@ -925,13 +940,19 @@ body {
 }
 
 .policy__text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .policy__text {
+    font-size: 14px;
+  }
 }
 
 .check-icon {
@@ -998,12 +1019,18 @@ body {
 }
 
 .agreements {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   margin-left: 3px;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .agreements {
+    font-size: 14px;
+  }
 }
 
 .logo {
