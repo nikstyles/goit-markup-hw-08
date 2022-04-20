@@ -119,13 +119,10 @@
     }
   }
 
-  @media screen and (max-width: 420px) {
-    .mob-soc__item:not(:last-child) {
-      margin-bottom: 10px;
-    }
-  }
-
   .mob-soc__link {
+    @media screen and (max-width: 420px) {
+      font-size: 13px;
+    }
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
