@@ -27,7 +27,7 @@
         <nav class="nav">
           <ul class="navigation list">
             <li class="navigation__item">
-              <a href="./index.html" class="navigation__link">Студия</a>
+              <a href="./index.html" class="navigation__link">Студия </a>
             </li>
             <li class="navigation__item">
               <a
@@ -59,23 +59,90 @@
             >
           </li>
         </ul>
-        <button class="menu-open-btn">
-          <input
-            type="checkbox"
-            id="checkbox3"
-            class="checkbox3 visuallyHidden"
-          />
-          <label for="checkbox3">
-            <div class="hamburger hamburger3">
-              <span class="bar bar1"></span>
-              <span class="bar bar2"></span>
-              <span class="bar bar3"></span>
-              <span class="bar bar4"></span>
-            </div>
-          </label>
+        <button type="button" class="menu-open-btn">
+          <svg class="header__menu-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-open-hamburger"></use>
+          </svg>
         </button>
       </div>
-      <div class="mob-menu" data-menu-button></div>
+      <div class="mob-menu">
+        <button type="button" class="menu-close-btn">
+          <svg class="header__menu-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-hamburger"></use>
+          </svg>
+        </button>
+        <div class="mob-menu__wrap">
+          <nav class="mob-nav">
+            <ul class="mob-navigation list">
+              <li class="mob-navigation__item">
+                <a href="./index.html" class="mob-navigation__link">Студия</a>
+              </li>
+              <li class="mob-navigation__item">
+                <a
+                  href="./portfolio.html"
+                  class="mob-navigation__link mob-navigation__link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-navigation__item">
+                <a href="" class="mob-navigation__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="bottom-mob-menu">
+            <ul class="mob-contacts list">
+              <li class="mob-contacts__item mob-contacts__item--tel">
+                <a href="tel:+380991111111" class="mob-contacts__link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-contacts__item mob-contacts__item--mail">
+                <a href="mailto:info@example.com" class="mob-contacts__link">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-soc__list list">
+              <li class="mob-soc__item">
+                <a
+                  class="mob-soc__link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  href="https://www.instagram.com/"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-soc__item">
+                <a
+                  class="mob-soc__link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  href="https://twitter.com/"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mob-soc__item">
+                <a
+                  class="mob-soc__link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  href="https://www.facebook.com/"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mob-soc__item">
+                <a
+                  class="mob-soc__link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  href="https://www.linkedin.com/"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <section class="section">
@@ -603,5 +670,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>

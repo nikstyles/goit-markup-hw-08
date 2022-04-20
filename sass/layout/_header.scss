@@ -102,6 +102,7 @@
   }
   @include desktop {
     display: flex;
+    align-items: center;
   }
   @media screen and (max-width: 767px) {
     display: none;
@@ -110,7 +111,9 @@
 }
 
 .contacts__item--mail {
-  margin-bottom: 10px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts .contacts__item + .contacts__item {
@@ -119,92 +122,23 @@
   }
 }
 
-//-- mobile menu
-.menu-open-btn {
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border: none;
-  display: block;
-  margin-left: auto;
-  @include tablet {
-    display: none;
+//-- mobile hamburger menu
+@media screen and (max-width: 767px) {
+  .menu-open-btn {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin-left: auto;
+    &:hover {
+      fill: var(--accent-color);
+    }
   }
 }
 
-.visuallyHidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}
-
-.hamburger {
-  margin: 0 auto;
-  width: 24px;
-  height: 24px;
-  position: relative;
-}
-
-.hamburger .bar {
-  padding: 0;
-  width: 24px;
-  height: 3px;
-  background-color: var(--accent-color);
-  display: block;
-  transition: all 0.4s ease-in-out;
-  position: absolute;
-}
-
-.bar1 {
-  top: 0;
-}
-
-.bar2,
-.bar3 {
-  top: 11px;
-}
-
-.bar3 {
-  right: 0;
-}
-
-.bar4 {
-  bottom: 0;
-}
-
-.hamburger3 .bar1 {
-  transform-origin: 5%;
-}
-
-.hamburger3 .bar4 {
-  transform-origin: 5%;
-}
-
-.checkbox3:checked + label > .hamburger3 > .bar1 {
-  transform: rotate(45deg);
-  height: 3px;
-  width: 34px;
-}
-
-.checkbox3:checked + label > .hamburger3 > .bar3 {
-  transform: rotate(45deg);
-  height: 3px;
-  background-color: transparent;
-}
-
-.checkbox3:checked + label > .hamburger3 > .bar2 {
-  transform: rotate(-45deg);
-  height: 3px;
-  background-color: transparent;
-}
-
-.checkbox3:checked + label > .hamburger3 > .bar4 {
-  transform: rotate(-45deg);
-  height: 3px;
-  width: 34px;
+@include tablet {
+  .menu-open-btn {
+    display: none;
+  }
 }
