@@ -6,8 +6,7 @@
   @include tablet {
     justify-content: center;
   }
-  @include desktop {
-  }
+
   &__item {
     margin-bottom: 15px;
     &:not(:last-child) {

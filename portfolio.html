@@ -19,12 +19,12 @@
   </head>
   <body>
     <!-- Navigation -->
-    <!-- <header class="header">
-      <div class="container">
+    <header class="header">
+      <div class="menu container">
         <a class="logo" href="./index.html" lang="en">
           <span class="logo__part">Web</span>Studio
         </a>
-        <nav>
+        <nav class="nav">
           <ul class="navigation list">
             <li class="navigation__item">
               <a href="./index.html" class="navigation__link">Студия</a>
@@ -42,7 +42,7 @@
           </ul>
         </nav>
         <ul class="contacts list">
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--mail">
             <a href="mailto:info@example.com" class="contacts__link">
               <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
@@ -59,8 +59,24 @@
             >
           </li>
         </ul>
+        <button class="menu-open-btn">
+          <input
+            type="checkbox"
+            id="checkbox3"
+            class="checkbox3 visuallyHidden"
+          />
+          <label for="checkbox3">
+            <div class="hamburger hamburger3">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+              <span class="bar bar3"></span>
+              <span class="bar bar4"></span>
+            </div>
+          </label>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu" data-menu-button></div>
+    </header>
     <main>
       <section class="section">
         <div class="container">

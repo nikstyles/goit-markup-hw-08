@@ -3,7 +3,7 @@
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.38;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -12,8 +12,10 @@
     color: var(--accent-color);
   }
   @include tablet {
+    margin-right: 88px;
   }
   @include desktop {
+    font-size: 26px;
     margin-right: 93px;
   }
 }
