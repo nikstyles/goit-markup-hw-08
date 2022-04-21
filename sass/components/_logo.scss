@@ -24,6 +24,9 @@
   color: var(--primary-white-color);
   text-align: center;
   display: block;
+  @include tablet {
+    margin-right: 0px;
+  }
   @include desktop {
     text-align: left;
   }
